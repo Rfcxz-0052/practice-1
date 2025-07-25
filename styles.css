@@ -1,6 +1,5 @@
 body{
     background-color: #b0c4de;
-    text-align: center;
     font-family: sans-serif;
 }
 
@@ -32,4 +31,8 @@ img{
   background-color: #e06666;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
+}
+
+ul {
+  text-align: left;
 }
