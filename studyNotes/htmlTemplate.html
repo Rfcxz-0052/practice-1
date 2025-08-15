@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML樣板</title>
     <style>
-    body{
-    background-color: #b0c4de;
-    font-family: sans-serif;
+    body {
+        background-color: #b0c4de;
+        font-family: sans-serif;
+    }
+
+    .exampleCode {
+        background-color: lightgray;
+        width: 50%;
+        padding-top: 10px;
     }
     </style>
 </head>
 <body>
     <h1>HTML樣板</h1>
-    <pre>
+    <pre class="exampleCode">
         &lt!DOCTYPE html&gt
         &lthtml lang="zh-Hant"&gt
             &lthead&gt
@@ -27,5 +33,11 @@
             &lt/body&gt
         &lt/html&gt
     </pre>
+    <ul>
+        <li>&lthtml&gt元素是根元素，它定義整個html文件。</li>
+        <li>&lthtml lang="zh-Hant"&gt的lang屬性，它定義整個網頁語言。</li>
+        <li>&ltbody&gt元素定義網頁的主體。</li>
+        <li>&lth1&gt元素定義一個標題，從&lth1&gt~&lth6&gt，數字越小，字體越大。</li>
+    </ul>
 </body>
 </html>
