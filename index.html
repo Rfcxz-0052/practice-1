@@ -7,54 +7,67 @@
     <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-    <div class="header">
-        <h1>Spin的網站</h1>
-        <ul>
-            <li><a href="portfolio.html">作品集</a></li>
-            <li><a href="studyNotes.html">學習筆記</a></li>
-        </ul>
-    </div>
-    <div class="personal">
-        <img src="https://i.postimg.cc/vZZHR5gg/pexels-olia-danilevich-5088020.jpg" alt="迴紋針">
-        <div>
-            <h2>姓名: 林芮安  Spin </h2>
-            <h2>性別: 女</h2>
-            <h2>年齡: 33歲</h2>
-            <h2>學歷: 實踐大學-應用中文學系 </h2>
-            <h2>Email: tgvbnm7980@gmail.com</h2>
+    <div class="container">
+        <div class="header">
+            <h1>Spin的網站</h1>
+            <ul class="navigationbar">
+                <li class="nav"><a href="portfolio.html">作品集</a></li>
+                <li class="nav"><a href="studyNotes.html">學習筆記</a></li>
+            </ul>
         </div>
-    </div>
+        <section class="personal">
+            <img src="https://i.postimg.cc/vZZHR5gg/pexels-olia-danilevich-5088020.jpg" alt="個人形象照"/>
 
-    <div class="work">
-        <div>
-            <h2>一、工作經歷:</h2>
-            <h3>中油加油員(學生時期打工)</h3>
-            <h3>九乘九文具專家-收銀/陳列人員</h3>
-            <h3>麗文連鎖校園書局-高師店 門市人員(在職中)</h3>
-        </div>
+            <div class="info">
+                <p><strong>姓名: </strong>林芮安  (Spin) </p>
+                <p><strong>學歷: </strong>實踐大學-應用中文學系 </p>
+                <p><strong>Email: </strong><a href="mailto:tgvbnm7980@gmail.com"> tgvbnm7980@gmail.com</a></p>
+                <p><strong>工作經歷:</strong></p>
+                <ul class="work-list">
+                    <li>中油加油員</li>
+                    <li>九乘九文具專家-收銀/陳列人員</li>
+                    <li>麗文連鎖校園書局-高師店 門市人員(在職中)</li>
+                </ul>
 
-        <h2>二、技能</h2>
+            </div>
+        </section>
+
         <div class="skill">
-            <div>
-                <h2>職場技能</h2>
-                <h3>收銀</h3>
-                <h3>陳列</h3>
-                <h3>Line@官方網站的客服</h3>
-                <h3>Line@官方網站的宣傳-訊息群發、圖文選單製作</h3>
-                <h3>使用google site製作小官網 : <a href="https://sites.google.com/liwen.com.tw/nknu-liwen-ua/%E9%A6%96%E9%A0%81">網址</a></h3>
-                <h3>使用canva製作簡易海報</h3>
+            <div class="skill-block">
+                <h3>職場技能</h3>
+                <ul>
+                    <li>門市工作:收銀、陳列、客服(與消費者互動經驗豐富)</li>
+                    <li>Line@官方帳號的經營與宣傳-訊息群發、圖文選單製作</li>
+                    <li>使用google site製作小官網 : <a href="https://sites.google.com/liwen.com.tw/nknu-liwen-ua/%E9%A6%96%E9%A0%81">網址</a></li>
+                    <li>協助門市活動宣傳視覺設計（Canva）</li>
+                </ul>
+
+                <h3>個人技能</h3>
+                <ul>
+                    <li>VS Code + Git 版本控制</li>
+                    <li>GitHub 部署網站</li>
+                    <li>HTML / CSS 基礎</li>
+                    <li>能運用 AI 提升開發效率並理解程式邏輯</li>
+                </ul>
             </div>
 
-            <div>
-                <h2>個人技能</h2>
-                <h3>使用 VScode + git 上傳程式碼</h3>
-                <h3>使用github部署網站</h3>
-                <h3>基本html語法了解</h3>
-                <h3>善用AI製作網站，詳情請見作品集</h3>
+            <div class="skill-image">
+                <img src="image/skill01.jpg" alt="Line@圖文選單"/>
             </div>
 
+            <div class="skill-image"> 
+                <img src="image/skill02.jpg" alt="Line@群發訊息"/>
+            </div>
+        </div>
+        <div id="lightbox" class="lightbox">
+            <div class="lightbox-content">
+                <button id="zoom-in">＋</button>
+                <button id="zoom-out">－</button>
+                <img id="lightbox-img" src="">
+            </div>
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
